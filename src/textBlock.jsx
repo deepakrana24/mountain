@@ -29,7 +29,7 @@ function TextBlock() {
       <footer id="textblock-footer">
         Demo Created With 🧡 By&nbsp;
         <a
-          id="textblock-devsense"
+          id="textblock-d"
           href="https://www.linkedin.com/in/deepak-rana-168222212/"
         >
           Deepak Rana
