@@ -1,35 +1,68 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import TextBlock from "./textBlock";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div>
+      <Parallax pages={2} style={{ top: "0", left: "0" }} className="animation">
+        {/* <ParallaxLayer offset={0} speed={0.25}>
+          <div className="animation_layer parallax " id="artback"></div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={0.3}>
+          <div className="animation_layer parallax " id="mountain "></div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={-0.1}>
+          <div className="animation_layer parallax " id="logoland"></div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={0.3}>
+          <div className="animation_layer parallax " id="jungle1"></div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={0.35}>
+          <div className="animation_layer parallax " id="jungle2"></div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={0.5}>
+          <div className="animation_layer parallax " id="jungle3"></div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={0.45}>
+          <div className="animation_layer parallax " id="manomountain"></div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={0.4}>
+          <div className="animation_layer parallax " id="jungle5"></div>
+        </ParallaxLayer> */}
+        <ParallaxLayer offset={0} speed={0.25}>
+          <div class="animation_layer parallax" id="artback"></div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={0.3}>
+          <div class="animation_layer parallax" id="mountain"></div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={-0.1}>
+          <div class="animation_layer parallax" id="logoland"></div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={0.3}>
+          <div class="animation_layer parallax" id="jungle1"></div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={0.35}>
+          <div class="animation_layer parallax" id="jungle2"></div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={0.5}>
+          <div class="animation_layer parallax" id="jungle3"></div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={0.45}>
+          <div class="animation_layer parallax" id="jungle4"></div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={0.4}>
+          <div class="animation_layer parallax" id="manonmountain"></div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={0.35}>
+          <div class="animation_layer parallax" id="jungle5"></div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={1} speed={0.25}>
+          <TextBlock />
+        </ParallaxLayer>
+      </Parallax>
+    </div>
+  );
 }
 
-export default App
+export default App;
